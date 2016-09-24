@@ -2,6 +2,6 @@
 
 repo to practice git and github
 
-## Members
+### Members
 
 a list of the members
