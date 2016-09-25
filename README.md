@@ -6,3 +6,4 @@ repo to practice git and github
 
 a list of the members
 - [obedm503](https://ncai-developers.github.io/programming-club/obedm503/)
+- [glacay30](https://ncai-developers.github.io/programming-club/glacay30/)
