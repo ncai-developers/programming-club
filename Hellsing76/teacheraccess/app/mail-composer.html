@@ -1,0 +1,70 @@
+<!DOCTYPE html5>
+<html ng-app="mailComposer">
+<head>
+	<title>Mail Composer</title>
+	<link rel="stylesheet" href="lib/ionic/css/ionic.min.css"/>
+	<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+	<script>
+	const { remote, ipcRenderer } = require('electron');
+
+	angular.module('mailComposer',['ionic']).component('mailComposer',{
+		template: `
+<div class="card" style="margin:0;padding:0;box-shadow:none">
+	<form name="emailForm" ng-submit="$ctrl.sendEmail($ctrl.email)" novalidate>
+		<div class="row">
+			<div class="col col-20 col-offset-80">
+				<button
+					class="button button-calm button-medium"
+					ng-disabled="emailForm.$invalid"
+				>Send</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="list">
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">To:</span>
+				    <input required type="email" placeholder="juanperez@gmail.com" ng-model="$ctrl.email.to">
+				  </label>
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">CC:</span>
+				    <input type="text" placeholder="use commas for separation" ng-model="$ctrl.email.cc">
+				  </label>
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">BCC:</span>
+				    <input type="text" placeholder="also use commas for separation" ng-model="$ctrl.email.bcc">
+				  </label>
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">Subject:</span>
+				    <input type="text" placeholder="On grades..." ng-model="$ctrl.email.subject">
+				  </label>
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">Body:</span>
+				    <textarea required placeholder="the email body" style="height:200" ng-model="$ctrl.email.body"></textarea>
+				  </label>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+		`,
+		controller: ['$http', function($http){
+			this.email = {};
+			this.closeWindow = ()=>{
+				remote.getCurrentWindow().close();
+			};
+			this.sendEmail = (data)=>{
+				console.log(data);
+				ipcRenderer.send('mail-from-composer',data);
+				this.closeWindow();
+			};
+		}]
+	});
+	</script>
+</head>
+<body>
+	<ion-view overflow-scroll="true">
+		<mail-composer></mail-composer>
+	</ion-view>
+</body>
+</html>
