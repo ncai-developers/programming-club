@@ -1,6 +1,11 @@
-# Practice
-Playing with **MarkDown**, and easy way of writing HTML _without_ HTML  
-It is:
-* easy to ready
-* easy to learn
-* easy to write
+# Completed Projects
+* Snake/Slither
+* Pong
+
+# Current Projects
+* [Tetris](https://github.com/glacay30/tetris)
+
+# Future Projects
+* Basic platformer
+* Solitaire Card Game
+* Fencing App
