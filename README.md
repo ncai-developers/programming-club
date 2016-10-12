@@ -1,4 +1,4 @@
-# programming-club
+# programming-club 2016-2017
 
 repo to practice git and github
 

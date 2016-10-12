@@ -1,4 +1,4 @@
-### Some of my Projects
+### Some of my Projects (programming-club 2016-2017)
 
 #### camelCase
 
@@ -11,6 +11,6 @@
 - [dollar-array](https://obedm503.github.io/dollar-array/): util library for working with arrays
 - [studentaccess](https://ncai-developers.github.io/studentaccess/): ionic app for NCAI students to check their grades and homework
 
-#### Not Done
+#### In Progress
 
 - [teacheraccess](https://ncai-developers.github.io/teacheraccess/): electron app for NCAI teachers to manage their classes and grades
