@@ -7,7 +7,7 @@
 #### Done/Production-ready
 
 - [bootmark](https://obedm503.github.io/bootmark/): allows you to easily create a website from markdown
-- [katex-latex](https://obedm503.github.io/katex-latex/): showdown/bootmark extension that renders asciimath or latex to pretty html using [katex](https://khan.github.io/katex/)
+- [katex-latex](https://obedm503.github.io/katex-latex/): showdown/bootmark extension that renders asciimath or latex to pretty html using [KaTeX](https://khan.github.io/katex/)
 - [dollar-array](https://obedm503.github.io/dollar-array/): util library for working with arrays
 - [studentaccess](https://ncai-developers.github.io/studentaccess/): ionic app for NCAI students to check their grades and homework
 
