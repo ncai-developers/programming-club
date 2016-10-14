@@ -2,7 +2,7 @@
 
 #### camelCase
 
-- [camelCase](https://obedm503.github.io/): my blog about stuff
+- [camelCase](https://obedm503.github.io/): my blog about my creations
 
 #### Done/Production-ready
 
