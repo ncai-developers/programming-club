@@ -1,5 +1,3 @@
-Check out all of my stuff **[here](https://github.com/glacay30/games)**
-
 ## Current
 * Tetris
 
@@ -11,3 +9,5 @@ Check out all of my stuff **[here](https://github.com/glacay30/games)**
 * Basic platformer
 * Solitaire Card Game
 * Fencing App
+
+Check out all of my stuff **[here](https://github.com/glacay30/games)**
